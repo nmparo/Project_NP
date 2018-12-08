@@ -1,0 +1,37 @@
+<template>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <br></br>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="5">                                    
+                                <span click.trigger="newProduct()"><i data-feather="plus"></i></span>
+                                <span click.trigger="getProducts()" style="margin-left:5px;"><i data-feather="refresh-cw"></i></span>
+                            </th>
+                        </tr>
+
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Image</th>
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">URL</th>
+                                <th scope="col">See Reviews</th>
+                            </tr>
+                        </thead>
+                        <!-- <tbody>
+                            <tr repeat.for="product of products.productsArray">
+                                <td click.trigger="editProduct(product)">${product.productImage}</td>
+                                <td click.trigger="editProduct(product)">${product.productName}</td>
+                                <td click.trigger="editProduct(product)">${product.description}</td>
+                                <td click.trigger="editProduct(product)">${product.url}</td>      
+                            </tr>
+                        </tbody> -->
+                </table>
+            </div>
+        </div>
+    </div>
+
+</template>
