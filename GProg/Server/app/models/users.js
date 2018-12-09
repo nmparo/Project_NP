@@ -47,5 +47,4 @@ userSchema.virtual('fullName')
     });
 
 
-module.exports =
-    Mongoose.model('User', userSchema);
+module.exports = Mongoose.model('User', userSchema);

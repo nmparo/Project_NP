@@ -1,7 +1,3 @@
-
-
-
-
 var express = require('express'),
     router = express.Router(),
     logger = require('../../config/logger');
@@ -19,7 +15,7 @@ passport = require('passport');
 module.exports = function (app, config) {
     app.use('/api', router);
 
-    router.get('/users', requireAuth,  asyncHandler(async (req, res) => {
+    router.get('/users', requireAuth, asyncHandler(async (req, res) => {
         logger.log('info', 'Get all users');
         let query = User.find();
         query.sort(req.query.order)
